@@ -21,3 +21,9 @@ Spring的注入方式
 * request：每次http请求创建一个实例且仅在当前request内有效
 * session：同上，每次http请求创建，仅在session有效
 * global session：基于portlet的web中有效（portlet定义了global session），如果是在web中，同session
+
+#### Bean的生命周期
+* define
+* initial
+* use
+* destroy
