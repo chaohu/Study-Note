@@ -3,6 +3,6 @@ Every day I study notes
 
 [![Author](https://img.shields.io/badge/author-chaohu-lightgrey.svg)](https://github.com/chaohu)
 
+#### [HTML](https://github.com/chaohu/Study-Note/blob/master/html.md)
 
-#### 安装深度音乐，添加百度音乐插件
-* 
+#### Install deepin Wiki
