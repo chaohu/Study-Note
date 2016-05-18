@@ -1,5 +1,6 @@
 # Spring Notes
-**author: Ajay**
+
+[![Author](https://img.shields.io/badge/author-chaohu-lightgrey.svg)](https://github.com/chaohu)
 
 #### Instroduction
 * IOC 控制反转

@@ -1,4 +1,7 @@
 # Git Notes
+
+[![Author](https://img.shields.io/badge/author-chaohu-lightgrey.svg)](https://github.com/chaohu)
+
 ### 更改git commit编辑器命令
 git config --global core.editor 编辑器名
 
