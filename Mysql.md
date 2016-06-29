@@ -14,12 +14,19 @@
 ### 三、常用命令
 
 SELECT VERSION();	//显示当前服务器版本
+
 SELECT NOW();		//显示当前日期时间
+
 SELECT user();		//显示当前用户
+
 CREATE {DATABASE | SCHEMA} [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset_name			//创建数据库
+
 ALTER {DATABASE | SCHEMAS} [db_name] [DEFAULT] CHARACTER SET [=] charset_name						//修改数据库
+
 DROP {DATABASE | SCHEMAS} [IF EXISTS] db_name	//删除数据库
+
 SHOW {DATABASES | SCHEMAS};	//查看当前服务器下的数据表列表
+
 SHOW WARNINGS;		//查看警告信息
 
 ### 四、数据类型
