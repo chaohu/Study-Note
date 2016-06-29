@@ -41,3 +41,10 @@ SHOW WARNINGS;		//查看警告信息
 #### 2.浮点型	(M 数字总位数，D 小数点后面的位数)
 * FLOAT[(M,D)]
 * DOUBLE[(M,D)]
+
+#### 3.日期时间类型
+* YEAR
+* TIME
+* DATA
+* DATETIME
+* TIMESTAMP
