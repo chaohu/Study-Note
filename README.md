@@ -13,4 +13,6 @@ Every day I study notes
 
 #### [五、SPRING](https://github.com/chaohu/Study-Note/blob/master/spring-notes.md)
 
+#### [六、Mysql](https://github.com/chaohu/Study-Note/blob/master/Mysql.md)
+
 #### Install deepin Wiki
