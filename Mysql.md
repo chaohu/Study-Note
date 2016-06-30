@@ -19,7 +19,7 @@ SELECT VERSION();	//显示当前服务器版本
 
 SELECT NOW();		//显示当前日期时间
 
-SELECT user();		//显示当前用户
+SELECT USER();		//显示当前用户
 
 SHOW WARNINGS;		//查看警告信息
 
@@ -31,9 +31,9 @@ ALTER {DATABASE | SCHEMAS} [db_name] [DEFAULT] CHARACTER SET [=] charset_name			
 
 DROP {DATABASE | SCHEMAS} [IF EXISTS] db_name	//删除数据库
 
-* 3.数据表
+SHOW {DATABASES | SCHEMAS};		//查看当前服务器下的数据库列表
 
-SHOW {DATABASES | SCHEMAS};		//查看当前服务器下的数据表列表
+* 3.数据表
 
 CREATE TABLE [IF NOT EXISTS] table_name(column_name data_type,...)	//创建数据表
 
@@ -74,3 +74,9 @@ SELECT expr,... FROM tb1_name	//记录查找
 * LONGTEXT
 * ENUM('value1','value2',...)
 * SET('value1','value2',...)
+
+### 五、数据属性
+
+NULL/NOT NULL	//数据可以为空/不能为空
+
+AUTO_INCREMENT	//自动编号，且必须与主键组合使用
