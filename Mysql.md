@@ -49,7 +49,7 @@ SHOW INDEXES FROM tb1_name		//查看索引
 
 ALTER TABLE tb1_name ADD [COLUMN] co1_name column_definition [FIRST | AFTER co1_name]						//添加单列
 
-ALTER TABLE tb1_name ADD [COLUMN] /(co1_name column_definition,...)	//添加多列
+ALTER TABLE tb1_name ADD [COLUMN] \(co1_name column_definition,...\)	//添加多列
 
 ALTER TABLE tb1_name DROP [COLUMN] co1_name	//删除列
 
