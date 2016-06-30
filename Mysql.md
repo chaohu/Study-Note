@@ -45,6 +45,14 @@ INSERT [INTO] tb1_name[(col_name,...)] VALUES(val,...)		//插入记录
 
 SELECT expr,... FROM tb1_name	//记录查找
 
+SHOW INDEXES FROM tb1_name		//查看索引
+
+ALTER TABLE tb1_name ADD [COLUMN] co1_name column_definition [FIRST | AFTER co1_name]						//添加单列
+
+ALTER TABLE tb1_name ADD [COLUMN] (co1_name column_definition,...)	//添加多列
+
+ALTER TABLE tb1_name DROP [COLUMN] co1_name	//删除列
+
 ### 四、数据类型
 
 #### 1.整形
@@ -84,5 +92,12 @@ AUTO_INCREMENT	//自动编号，且必须与主键组合使用
 PRIMARY KEY		//主键约束，自动为NOT NULL，每张表只有一个
 
 UNIQUE KEY		//唯一约束，可以为空、多个
+
+FOREIGN KEY		//外键约束
+
+* CASCADE:从父表删除或更新且自动删除或更新子表中匹配的行
+* SET NULL:从父表删除或更新行，并设置子表中的外键列为NULL。如果使用该选项，必须保证子表列没有指定的外键列
+* RESTRICT:拒绝对父表的删除或更新操作
+* NO ACTION:标准SQL关键字，在MySQL中与RESTRICT相同
 
 DEFAULT			//默认值
