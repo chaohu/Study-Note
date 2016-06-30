@@ -80,3 +80,9 @@ SELECT expr,... FROM tb1_name	//记录查找
 NULL/NOT NULL	//数据可以为空/不能为空
 
 AUTO_INCREMENT	//自动编号，且必须与主键组合使用
+
+PRIMARY KEY		//主键约束，自动为NOT NULL，每张表只有一个
+
+UNIQUE KEY		//唯一约束，可以为空、多个
+
+DEFAULT			//默认值
