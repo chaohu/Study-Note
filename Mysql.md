@@ -4,6 +4,7 @@
 ### 一、基本信息
 * 1.默认端口号：3306
 * 2.超级用户：root
+* 3.子查询（Subquery）：出现再其他SQL语句内的SELECT子句
 
 ### 二、语句规范
 * 1.关键字与函数名称全部大写
@@ -68,6 +69,8 @@ SELECT select_expr [,select_expr...] [FROM table_references [SHERE shere_conditi
 [HAVING where_condition]	//分组条件
 
 [ORDER BY {co1_name | expr | posotion} [ASC | DESC],...}	//对查询结果进行排序
+
+[LIMIT {[offset,] row_count | row_count OFFSET offset}]		//限制查询结果返回的数量
 
 ### 四、数据类型
 
