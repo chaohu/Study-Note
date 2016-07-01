@@ -41,10 +41,6 @@ SHOW TABLES [FROM db_name] [LIKE 'pattern' | WHERE expr]	//查看数据表
 
 SHOW COLUMNS FROM tb1_name		//查看数据表结构
 
-INSERT [INTO] tb1_name[(col_name,...)] VALUES(val,...)		//插入记录
-
-SELECT expr,... FROM tb1_name	//记录查找
-
 SHOW INDEXES FROM tb1_name		//查看索引
 
 ALTER TABLE tb1_name ADD [COLUMN] co1_name column_definition [FIRST | AFTER co1_name]						//添加单列
@@ -52,6 +48,26 @@ ALTER TABLE tb1_name ADD [COLUMN] co1_name column_definition [FIRST | AFTER co1_
 ALTER TABLE tb1_name ADD [COLUMN] \(co1_name column_definition,...\)	//添加多列
 
 ALTER TABLE tb1_name DROP [COLUMN] co1_name	//删除列
+
+* 4.记录
+
+INSERT [INTO] tb1_name[(col_name,...)] {VALUES | VALUE}({expr | DEFAULT},...),(...),...							//插入记录
+
+INSERT [INTO] tb1_name SET co1_name={expr | DEFAULT},...	//插入记录（可以使用子查询SubQuery）
+
+INSERT [INTO] tb1_name [(co1_name,...)] SELECT ...		将查询结果插入到指定数据表
+
+UPDATE [LOW_PRIORITY] [IGNORE] table_reference SET co1_name1={expr1|DEFAULT} [,co1_name2={expr2|DEFAULT}]...
+
+DELETE FROM tb1_name [WHERE where_condition]	//删除记录（单表删除）
+
+SELECT select_expr [,select_expr...] [FROM table_references [SHERE shere_condition] [GROUP BY {co1_name | position} [ASC|DESC],...] [HAVING where_condition] [ORDER BY {co1_name | expr | positoin} [ASC | DESC],...] [LIMIT {[offset,] row_count|row_count OFFSET offset}]	//记录查找
+
+[GROUP BY {co1_name | position} [ASC | DESC],...	//查询结果分组
+
+[HAVING where_condition]	//分组条件
+
+[ORDER BY {co1_name | expr | posotion} [ASC | DESC],...}	//对查询结果进行排序
 
 ### 四、数据类型
 
