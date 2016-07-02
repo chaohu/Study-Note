@@ -96,7 +96,7 @@ FOREIGN KEY		//外键约束
 
 DEFAULT			//默认值
 
-### 六、函数
+### 六、内置函数
 
 #### 1.字符函数
 
@@ -154,3 +154,29 @@ DEFAULT			//默认值
 #### 7.加密函数
 * MD5()			//信息摘要算法
 * PASSWORD()	//密码算法
+
+### 七、自定义函数
+
+* 创建自定义函数
+
+CREATE FUNCTION function_name RETURNS {STRING|INTEGER|REAL|DECIMAL} routine_body
+
+* 删除函数
+
+DROP FUNCTION [IF EXISTS] function_name
+
+### 八、存储过程
+
+* 创建存储过程
+
+CREATE
+
+[DEFINER = {user | CURRENT_USER}]
+
+PROCEDURE sp_name ([proc_parameter[,...]])
+
+[characteristic ...] routine_body
+
+proc_parameter:
+
+[IN | OUT | INOUT] param_name type
