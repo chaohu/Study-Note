@@ -120,3 +120,15 @@ FOREIGN KEY		//外键约束
 * NO ACTION:标准SQL关键字，在MySQL中与RESTRICT相同
 
 DEFAULT			//默认值
+
+### 六、函数
+
+#### 字符函数
+
+* CONCAT()		//字符连接
+* CONCAT_WS()	//使用指定的分隔符进行字符连接
+* FORMAT()		//数字格式化
+* LOWER()		//转换成小写字母
+* UPPER()		//转换成大写字母
+* LEFT()		//获取左侧字符
+* RIGHT()		//获取右侧字符
