@@ -180,3 +180,17 @@ PROCEDURE sp_name ([proc_parameter[,...]])
 proc_parameter:
 
 [IN | OUT | INOUT] param_name type
+
+* 修改存储过程
+
+ALTER PROCEDURE ap_name [characteristic ...]
+
+COMMENT 'string'
+
+|{CONTAINS SQL | NO SQL | READS SQL DATA | MODIFIES SQL DATA}
+
+| SQL SECURITY {DEFINER | INVOKER}
+
+* 删除存储过程
+
+DROP PROCEDURE [IF EXISTS] sp_name
