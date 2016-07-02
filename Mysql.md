@@ -132,3 +132,50 @@ DEFAULT			//默认值
 * UPPER()		//转换成大写字母
 * LEFT()		//获取左侧字符
 * RIGHT()		//获取右侧字符
+* LENGTH()		//获取字符串长度
+* LTRIM()		//删除前导空格
+* RTRIM()		//删除后续空格
+* TRIM()		//删除前导和后续空格
+* SUBSTRING()	//字符串截取
+* [NOT] LIKE	//模式匹配
+* REPLACE()		//字符串替换
+
+#### 数字运算符与函数
+* CEIL()		//进一取整
+* DIV			//整数除法
+* FLOOR()		//舍一取整
+* MOD			//取余数（取模）
+* POWER()		//幂运算
+* ROUND()		//四舍五入
+* TRUNCATE()	//数字截取
+
+#### 比较运算符与函数
+* [NOT] BETWEEN...AND...	//[不]在范围之内
+* [NOT] IN()				//[不]在列出值范围内
+* IS [NOT] NULL				//[不]为空
+
+#### 日期时间函数
+* NOW()			//当前日期和时间
+* CURDATE()		//当前日期
+* CURTIME()		//当前时间
+* DATE_ADD()	//日期变化
+* DATEDIFF()	//日期差值
+* DATE_FORMAT()	//日期格式化
+
+#### 信息函数
+* CONNECTION_ID()	//连接ID
+* DATEBASE()		//当前数据库
+* LAST_INSERT_ID()	//最后插入记录
+* USER()			//当前用户
+* VERSION()			//版本信息
+
+#### 聚合函数
+* AVG()			//平均值
+* COUNT()		//计数
+* MAX()			//最大值
+* MIN()			//最小值
+* SUM()			//求和
+
+#### 加密函数
+* MD5()			//信息摘要算法
+* PASSWORD()	//密码算法
