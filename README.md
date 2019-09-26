@@ -15,4 +15,6 @@ Every day I study notes
 
 #### [六、Mysql](https://github.com/chaohu/Study-Note/blob/master/Mysql.md)
 
+#### [七、AliOS-Things](https://github.com/chaohu/Study-Note/blob/master/AliOS-Things.md)
+
 #### Install deepin Wiki
